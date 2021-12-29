@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">Emprendimiento Facundo Alario</a>
+    
+        <nav>
+    
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li class="submenu">
+                    <img src="img/cart.png" alt="">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+    
+        <h1>Bienvenidos a la tienda web</h1>
+
+        <p>Lista de Productos</p>
+
+        <!-- Genero 3 botones simlando cards de productos para agregarlos al carrito -->
+        <p class="agregar-carrito"> Plato Playo <button onclick="agregarPlayo()" id="1">Agregar Unidad</button></p>
+        <p class="agregar-carrito"> Plato Hondo <button onclick="agregarHondo()" id="2">Agregar Unidad</button></p>
+        <p class="agregar-carrito"> Mini Cuenco <button onclick="agregarCuenco()" id="3">Agregar Unidad</button></p>
+        
+
+        <div id= "carrito"> Mi lista de productos es la siguiente</div>
+        <div id="listaProductos">
+            <div id="playo"></div>
+            <div id="hondo"></div>
+            <div id="cuenco"></div>
+        </div>
+
+        <!-- Genero un boton para borrar toda la informacion contenida en el carrito -->
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+        <div id="myDiv"> 
+            Confirmar compra
+        </div>
+        
+        <!-- Genero un boton para confirmar la compra el cual activa un mensaje para el usuario -->
+
+        <button onclick="confirmarCompra()">Comprar</button>
+
+
+    </section>
+    
+    
+    <script src="./main.js"></script>
+    
+</body>
+</html>
